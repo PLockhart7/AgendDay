@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AgendDay</string>
+
+    <!--Spinner -->
+    <string-array name="estado_nota">
+        <item>"No finalizado</item>
+        <item>Finalizado</item>
+    </string-array>
+</resources>

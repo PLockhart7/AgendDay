@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "503366541678",
+    "project_id": "agendday",
+    "storage_bucket": "agendday.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:503366541678:android:2f187b3c7954ab4b4ae17f",
+        "android_client_info": {
+          "package_name": "com.example.agendday"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "503366541678-m63fnmtn4vl7f9d4fk1vpoh9uc3gvsjg.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCeBMo-_KqBNB1XDWzusAbBTDb8i9Xj-fY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "503366541678-m63fnmtn4vl7f9d4fk1vpoh9uc3gvsjg.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

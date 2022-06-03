@@ -1,0 +1,374 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MenuPrincipal">
+
+  <androidx.appcompat.widget.LinearLayoutCompat
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="vertical"
+      android:padding="5dp"
+      android:gravity="center">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:cardBackgroundColor="#5499c7"
+        app:cardUseCompatPadding="true"
+        android:padding="0.2dp"
+        app:cardCornerRadius="5dp">
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:weightSum="4">
+
+        <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginStart="2dp"
+            android:src="@drawable/imagen_perfil_usuario"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="3"
+            android:orientation="vertical">
+
+          <TextView
+              android:text="Bienvinid@"
+              android:textColor="#fff"
+              android:textSize="20sp"
+              android:fontFamily="@font/josefinsansme"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+          <ProgressBar
+              android:id="@+id/pbDatos"
+              android:layout_marginTop="10dp"
+              android:layout_gravity="center"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+          <TextView
+              android:id="@+id/uidPrincipal"
+              android:text="-"
+              android:visibility="gone"
+              android:textColor="#fff"
+              android:textSize="15sp"
+              android:fontFamily="@font/josefinsansme"
+              android:layout_width="wrap_content"
+              android:layout_height="wrap_content"/>
+
+          <androidx.appcompat.widget.LinearLayoutCompat
+              android:id="@+id/linearNombre"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/nombre_menu"/>
+
+            <TextView
+                android:id="@+id/nombrePersonaPrincipal"
+                android:text="-"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/josefinsansme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+          </androidx.appcompat.widget.LinearLayoutCompat>
+
+          <androidx.appcompat.widget.LinearLayoutCompat
+              android:id="@+id/linearCorreo"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/correo_menu"/>
+
+            <TextView
+                android:id="@+id/correoPersonaPrincipal"
+                android:text="-"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/josefinsansme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+          </androidx.appcompat.widget.LinearLayoutCompat>
+
+          <androidx.appcompat.widget.LinearLayoutCompat
+              android:id="@+id/linearCorreoVerificacion"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="horizontal"
+              android:visibility="gone">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center"
+                android:src="@drawable/veri_principal"/>
+
+            <Button
+                android:id="@+id/btnEstadoCuentaPrincipal"
+                android:text="No verificado"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:backgroundTint="#607d8b"
+                android:layout_marginStart="3dp"
+                android:fontFamily="@font/josefinsansme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+          </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="20dp"
+          android:weightSum="2">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+          <androidx.appcompat.widget.AppCompatImageView
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:src="@drawable/agregar"/>
+
+          <Button
+              android:id="@+id/btnAgregarNota"
+              android:text="Agregar Nota"
+              android:enabled="false"
+              android:layout_marginTop="10dp"
+              android:fontFamily="@font/josefinsansme"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+          <androidx.appcompat.widget.AppCompatImageView
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:src="@drawable/lista"/>
+
+          <Button
+              android:id="@+id/btnMisNotas"
+              android:text="Mis Notas"
+              android:enabled="false"
+              android:layout_marginTop="10dp"
+              android:fontFamily="@font/josefinsansme"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="20dp"
+          android:weightSum="2">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+          <androidx.appcompat.widget.AppCompatImageView
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:src="@drawable/archivados"/>
+
+          <Button
+              android:id="@+id/btnNotasImportantes"
+              android:text="Importantes"
+              android:enabled="false"
+              android:layout_marginTop="10dp"
+              android:fontFamily="@font/josefinsansme"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+          <androidx.appcompat.widget.AppCompatImageView
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:src="@drawable/perfil"/>
+
+          <Button
+              android:id="@+id/btnContactos"
+              android:text="Contactos"
+              android:enabled="false"
+              android:layout_marginTop="10dp"
+              android:fontFamily="@font/josefinsansme"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+      <androidx.appcompat.widget.LinearLayoutCompat
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:layout_marginTop="20dp"
+          android:weightSum="2">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+          <androidx.appcompat.widget.AppCompatImageView
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:src="@drawable/acerca_de"/>
+
+          <Button
+              android:id="@+id/btnAcercaDe"
+              android:text="Acerca de"
+              android:enabled="false"
+              android:layout_marginTop="10dp"
+              android:fontFamily="@font/josefinsansme"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="5dp"
+            android:orientation="vertical"
+            android:gravity="center">
+
+          <androidx.appcompat.widget.AppCompatImageView
+              android:layout_width="70dp"
+              android:layout_height="70dp"
+              android:src="@drawable/salir"/>
+
+          <Button
+              android:id="@+id/btnCerrarSesion"
+              android:text="Salir"
+              android:enabled="false"
+              android:layout_marginTop="10dp"
+              android:fontFamily="@font/josefinsansme"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"/>
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+      </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+
+
+  </androidx.appcompat.widget.LinearLayoutCompat>
+
+  </ScrollView>

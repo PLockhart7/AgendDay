@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AgregarNota.Agregar_Nota">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/idActuNota"
+            android:text="Id nota"
+            android:textSize="18sp"
+            android:visibility="gone"
+            android:fontFamily="@font/josefinsansme"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:id="@+id/uidUsuarioActuNota"
+            android:hint="Uid usuario"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/josefinsansme"/>
+
+        <TextView
+            android:id="@+id/correoActuNota"
+            android:hint="Correo Usuario"
+            android:visibility="gone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/josefinsansme"/>
+
+        <TextView
+            android:id="@+id/fechaHoraActualActuNota"
+            android:visibility="gone"
+            android:hint="fecha y hora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="@font/josefinsansme"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivNotaFinalizada"
+                android:layout_width="30dp"
+                android:visibility="gone"
+                android:layout_height="30dp"
+                android:background="#50FA01"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/ivNotaNoFinalizada"
+                android:layout_width="30dp"
+                android:visibility="gone"
+                android:layout_marginStart="5dp"
+                android:layout_height="30dp"
+                android:background="#FA0404"/>
+
+            <TextView
+                android:id="@+id/estadoActuNota"
+                android:text="No finalizado"
+                android:textSize="20dp"
+                android:layout_marginStart="5dp"
+                android:fontFamily="@font/josefinsansme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+            
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <EditText
+            android:id="@+id/txtTituloActuNota"
+            android:hint="Titulo"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:fontFamily="@font/josefinsansme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/txtDescripcionActuNota"
+            android:hint="Descripción"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"
+            android:minHeight="150dp"
+            android:gravity="start"
+            android:fontFamily="@font/josefinsansme"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnCalendarioActuNota"
+                android:text="Calendario"
+                app:icon="@drawable/icono_calendario"
+                android:fontFamily="@font/josefinsansme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/fechaActuNota"
+                android:hint="00/00/0000"
+                android:textSize="20dp"
+                android:layout_marginStart="15dp"
+                android:fontFamily="@font/josefinsansme"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp">
+
+            <Spinner
+                android:id="@+id/spEstado"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"/>
+
+            <TextView
+                android:id="@+id/estadoNuevo"
+                android:text="--"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</ScrollView>

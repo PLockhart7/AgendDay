@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView android:clickable="true"
+    android:focusable="true"
+    android:foreground="?android:attr/selectableItemBackground"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true"
+    android:padding="0.2dp"
+    app:cardCornerRadius="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="5dp">
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:src="@drawable/icono_item_nota"/>
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="7dp">
+
+            <TextView
+                android:id="@+id/idNotaItem"
+                android:visibility="gone"
+                android:text="Id nota"
+                android:fontFamily="@font/josefinsansme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/uidUsuarioItem"
+                android:text="UID usuario"
+
+                android:visibility="gone"
+                android:fontFamily="@font/josefinsansme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/correoUsuarioItem"
+                android:text="Correo Usuario"
+                android:visibility="gone"
+                android:fontFamily="@font/josefinsansme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/fechaHoraActualItem"
+                android:visibility="gone"
+                android:text="Fecha y hora del registro"
+                android:fontFamily="@font/josefinsansme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/tituloItem"
+                android:text="Titulo"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/josefinsansme"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"/>
+
+            <TextView
+                android:id="@+id/descripcionItem"
+                android:text="Descripción"
+                android:textSize="18sp"
+                android:fontFamily="@font/josefinsansme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/fechaItem"
+                android:text="00/00/0000"
+                android:textSize="18sp"
+                android:fontFamily="@font/josefinsansme"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivNotaFinalizadaItem"
+                    android:layout_width="10dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="10dp"
+                    android:background="#50FA01"/>
+
+                <androidx.appcompat.widget.AppCompatImageView
+                    android:id="@+id/ivNotaNoFinalizadaItem"
+                    android:layout_width="10dp"
+                    android:visibility="gone"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="5dp"
+                    android:layout_height="10dp"
+                    android:background="#FA0404"/>
+
+                <TextView
+                    android:id="@+id/estadoItem"
+                    android:text="No finalizado"
+                    android:textSize="20sp"
+                    android:layout_marginStart="15dp"
+                    android:fontFamily="@font/josefinsansme"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+
+
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.cardview.widget.CardView>
